@@ -1,0 +1,13 @@
+
+<div style="margin: 30px">
+  <h1>Edit Article</h1>
+  <%= form_with(model: @article) do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+
+    <%= form.label :content %>
+    <%= form.text_field :content, { size: 50 } %>
+
+    <%= form.submit "Update Article" %>
+  <% end %>
+</div>

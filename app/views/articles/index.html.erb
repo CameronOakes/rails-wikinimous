@@ -1,0 +1,12 @@
+<div>
+  <h2 style="margin: 30px" class="text-decoration-none"><%= link_to "Create Article", new_article_path %></h2>
+
+  <div style="margin: 30px" class="">
+    <% @articles.each do |article| %>
+      <h2 class="text-decoration-none"><%= link_to article.title, article_path(article) %></h2>
+      <p class="card-text"><%= article.content %></p>
+    <% end %>
+  </div>
+
+
+</div>
